@@ -1,0 +1,103 @@
+body{
+  /*overflow-x: hidden !important;*/
+}
+.about-box{
+  width: 100%;
+  height: 620px;
+  /*border: 1px black solid;*/
+  box-shadow: 0 5px 5px 5px rgba(1, 1, 1,  0.1 );
+
+}
+.line-box-section{
+  width:100%;
+  margin-left: -55px;
+  border: 1px #005cbf solid;
+  background: #005cbf;
+}
+.about-text{
+  margin-left: 450px;
+  width: 300px;
+  display: inline-block;
+}
+.img-about{
+  display: inline-block;
+  width: 200px;
+  height:     200px;
+  padding: 20px;
+  margin-left: 20px;
+  float: left;
+}
+.ong{
+  text-align: center;
+  margin-left: 140px;
+  display: inline-block;
+  float: right;
+}
+.a_left{
+  width: 50%;
+  float: left;
+}
+.a_info{
+  /*display: inline-block;*/
+  float:right;
+  padding: 20px;
+}
+.a_info p:nth-child(1){
+  margin-top:0;
+}
+.skill{
+  /*margin-top: 90px;*/
+  margin-left: 20px;
+}
+.skill p{
+  margin-left: 230px;
+  font-size: 20px;
+}
+.a_right{
+  float: right;
+}
+.a_right h3{
+  margin-left: 200px;
+}
+.a_right p{
+  /*text-align: center;*/
+  width: 100%;
+  text-align: center;
+}
+.center_section_name{
+  margin-left: 500px;
+}
+
+
+
+@media only screen and (max-width:340px){
+  .a_right h3{
+    margin-left: 20px;
+    overflow: hidden;
+
+  }
+
+  .about-text{
+    margin-left: 55px;
+    width: 250px;
+  }
+  .skill p{
+    margin-left: 0;
+  }
+
+
+  .a_right p {
+    margin-left: 20px;
+    text-align: left;
+  }
+  .skill {
+    margin-top: 250px;
+    display: none;
+  }
+  .skill span{
+    text-align: right;
+    margin-left: 200px;
+    display: none;
+  }
+
+}
