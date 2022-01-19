@@ -1,24 +1,15 @@
 import React, {Component} from 'react';
-import Navbar from "./Navbar";
-import Routers from "./Routers";
-import {BrowserRouter as Router} from "react-router-dom";
+import HomeLayout from "./layout_RoutersComponents/HomeLayout";
+import {BrowserRouter as Router, HashRouter, Route, Switch,} from "react-router-dom";
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <Router>
-                    <Navbar/>
-                    {/*<div className="container">*/}
-                    {/*    <div className="row">*/}
-                    {/*        <div className="col-md-12">*/}
-                                <Routers/>
-
-                            {/*</div>*/}
-                        {/*</div>*/}
-                    {/*</div>*/}
-                </Router>
-            </div>
+            <Router>
+                <div>
+                    <HomeLayout/>
+                </div>
+            </Router>
         );
     }
 }

@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css'
-import './index.css';
-import 'jquery'
-import 'bootstrap/dist/js/bootstrap.bundle'
+import './index.css'
 import 'antd/dist/antd.css';
 import 'core-js';
 import App from './App';
+import {Spin} from "antd";
 
 ReactDOM.render(
-    <App />,
-  document.getElementById('root')
+    <Suspense fallback={<div className="loadingSpin"><Spin size={"large"}/></div>}>
+        <App/>
+    </Suspense>
+    ,
+    document.getElementById('root')
 );
 
